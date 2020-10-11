@@ -178,20 +178,6 @@ public class CheckConnection extends AppCompatActivity {
 
                 }
 
-                 // textView.setText(list.toString());
-
-              //  textView.setText(list.toString());
-
-
-//                ArrayAdapter araylist = new ArrayAdapter(CheckConnection.this,R.layout.listitems,list);
-//
-//
-//                listView.setAdapter(araylist);
-
-
-//                displaydata();
-
-
 
 
 
@@ -209,42 +195,7 @@ public class CheckConnection extends AppCompatActivity {
 
     }
 
-    private void displaydata() {
 
-
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-
-                final String[] plants = { "Lettuce", "Coriander",
-                        "Mint", "Kale",
-                        "Spinach", "Red Spinach","Curryleaf","Micro Greens" };
-                Log.e("came inside","came inside");
-
-                ArrayAdapter araylist = new ArrayAdapter(CheckConnection.this,R.layout.listitems,plants);
-
-
-                listView.setAdapter(araylist);
-
-                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-
-                        //   Log.e("Selected Value",plants.get(position));
-
-                        //Toast.makeText(Dropdown.this, plants[position], Toast.LENGTH_SHORT).show();
-
-                    }
-                });
-
-
-                Log.e("listvalues", String.valueOf(list));
-            }
-        });
-
-
-    }
 
 
 }
